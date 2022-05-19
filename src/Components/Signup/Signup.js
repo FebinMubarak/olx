@@ -16,10 +16,7 @@ export default function Signup() {
   const handleSubmit = (e,err)=>{
     e.preventDefault()
     firebase.auth().createUserWithEmailAndPassword(email,password).then((result)=>{
-      if(password.length<6){
-        console.log("weak password");
-        
-      }
+     
       console.log("step 1")
      result.user.updateProfile({displayName:Username}).then(()=>{
       console.log("step 2")

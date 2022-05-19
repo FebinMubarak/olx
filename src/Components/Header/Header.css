@@ -161,4 +161,9 @@
   .sellMenu {
     display: none;
   }
+  
+}
+
+.span1{
+  cursor: pointer;
 }
